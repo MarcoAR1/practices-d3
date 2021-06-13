@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading and Parsing CSV Data</title>
+  </head>
+  <body>
+    <script>
+      const datos = async (url) => {
+        const res = await fetch(url)
+        return await res.text()
+      }
+      const csvUrl =
+        'https://gist.githubusercontent.com/MarcoAR1/3fc2f6b7a3939a113fea660b1188ab4e/raw/0b7bf96e3e8f6c8213820d610541647618d32b69/gistfile1.txt'
+      datos(csvUrl).then((text) => {
+        console.log(text)
+      })
+      /*
+         fetch(url)
+        .then((res) => res.text())
+        .then((res) => console.log(res))
+      */
+    </script>
+  </body>
+</html>
