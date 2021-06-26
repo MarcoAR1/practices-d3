@@ -15,7 +15,6 @@ const insertScatterPlot = (data) => {
   const padding = 50
   const radius = 5
   const timeFormat = '%M:%S'
-  const timeParseFormat = (time) => d3.timeParse(timeFormat)(time)
 
   //Scales
   const xScale = d3
