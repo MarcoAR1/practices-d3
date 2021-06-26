@@ -1,0 +1,36 @@
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: gray;
+}
+#container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: white;
+  -webkit-box-shadow: 5px 5px 0px 0px #289fed, 10px 10px 0px 0px #5fb8ff;
+  box-shadow: 5px 5px 0px 0px #289fed, 10px 10px 0px 0px #5fb8ff;
+}
+
+#title {
+  position: absolute;
+}
+
+#y-axis-label {
+  text-transform: capitalize;
+}
+
+#tooltip {
+  position: absolute;
+  padding: 2px;
+  font: 16px sans-serif;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+  background: lightsteelblue;
+}
+.dot:hover {
+  fill: darkviolet;
+}
